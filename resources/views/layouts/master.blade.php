@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Divspace</title>
+        <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container invisible">
+            <nav class="navbar navbar-light bg-faded">
+                <a class="navbar-brand" href="{{ url() }}">Divspace</a>
+                <ul class="nav navbar-nav invisible">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url() }}">Home <span class="sr-only">(Current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('about') }}">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            @yield('content')
+        </div>
+        <div class="container">
+            <footer class="text-muted">
+                <hr>
+                <p class="pull-left">&copy; {{ date('Y') }} <a href="mailto:kyle@divspace.com">Kyle Anderson</a>.</p>
+                <ul class="pull-right">
+                    @foreach($socialLinks as $socialLink)
+                        <li>
+                            <a href="{{ $socialLink['url'] }}" title="{{ $socialLink['title'] }}">
+                                <span class="fa fa-fw fa-{{ $socialLink['icon'] }}">
+                                    <span class="sr-only">{{ $socialLink['title'] }}</span>
+                                </span>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </footer>
+        </div>
+        <script src="{{ asset('assets/js/app.js') }}"></script>
+        @yield('script')
+    </body>
+</html>

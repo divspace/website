@@ -1,0 +1,23 @@
+{
+  "name": "divspace",
+  "version": "1.0.0",
+  "private": true,
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "bourbon": "~4.2.6",
+    "font-awesome": "~4.4.0",
+    "hack": "chrissimpkins/Hack#v2.015",
+    "jquery": "~2.1.4",
+    "typed-js": "typed.js#~1.1.1"
+  }
+}

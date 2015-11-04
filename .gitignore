@@ -1,0 +1,10 @@
+.DS_Store
+.env
+/bootstrap/compiled.php
+/bower_components
+/node_modules
+/public/assets
+/tests
+/storage
+/vendor
+composer.lock

@@ -85,10 +85,14 @@ $footer-link-hover-color: rgb(51, 51, 51);
   #toolbar {
     width: 100%;
     height: 23px;
-    @include border-radius(5px 5px 0 0);
-    border-top: 1px solid $toolbar-top-border-color;
-    border-bottom: 1px solid $toolbar-bottom-border-color;
     background: $toolbar-color-stop-1;
+
+    border: {
+      top: 1px solid $toolbar-top-border-color;
+      bottom: 1px solid $toolbar-bottom-border-color;
+    }
+
+    @include border-radius(5px 5px 0 0);
     @include linear-gradient(to bottom, $toolbar-color-stop-1 0%, $toolbar-color-stop-2 100%);
     @include box-shadow-inset(0px, 1px, 0px, $toolbar-shadow-color, 0px, 1px, 0px, rgba(255, 255, 255, 0.5));
 
@@ -104,6 +108,7 @@ $footer-link-hover-color: rgb(51, 51, 51);
         left: 42.5%;
         position: relative;
         color: $title-color;
+
         @include system-font;
       }
 
@@ -117,9 +122,10 @@ $footer-link-hover-color: rgb(51, 51, 51);
           float: left;
           width: 12px;
           height: 12px;
+          overflow: hidden;
+
           @include border-radius(6px);
           @include box-shadow-inset(0px, 1px, 0px, rgba(255, 255, 255, 0.5), 0px, 0px, 3px, rgb(0, 0, 0));
-          overflow: hidden;
         }
 
         .red {
@@ -147,8 +153,12 @@ $footer-link-hover-color: rgb(51, 51, 51);
     min-height: 600px;
     padding: 0 5px;
     background: $screen-color;
-    border: 1px solid $screen-border-color;
-    border-width: 0 1px 1px 1px;
+
+    border: {
+      style: solid;
+      width: 0 1px 1px 1px;
+      color: $screen-border-color;
+    }
 
     p {
       color: $terminal-color;
@@ -175,9 +185,12 @@ $footer-link-hover-color: rgb(51, 51, 51);
 
     &:hover .cursor {
       border-width:0 0 0 1px;
-      animation-name: blink;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
+
+      animation: {
+        name: blink;
+        duration: 1.5s;
+        iteration-count: infinite;
+      }
 
       @keyframes blink {
           0% { opacity: 1; }

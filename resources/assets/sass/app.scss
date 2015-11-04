@@ -78,9 +78,10 @@ $footer-link-hover-color: rgb(51, 51, 51);
   width: 100%;
   margin: -20px auto 40px auto;
   background: rgb(255, 255, 255);
+  overflow: hidden;
+
   @include border-radius(5px);
   @include box-shadow(0px, 5px, 20px, rgba(0, 0, 0, 0.75));
-  overflow: hidden;
 
   #toolbar {
     width: 100%;
@@ -162,8 +163,9 @@ $footer-link-hover-color: rgb(51, 51, 51);
 
     p {
       color: $terminal-color;
-      @include terminal-font;
       margin: 1px 0 5px 0;
+
+      @include terminal-font;
 
       &:selection {
         background: $selection-color;
@@ -184,7 +186,7 @@ $footer-link-hover-color: rgb(51, 51, 51);
     }
 
     &:hover .cursor {
-      border-width:0 0 0 1px;
+      border-width: 0 0 0 1px;
 
       animation: {
         name: blink;

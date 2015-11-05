@@ -7,24 +7,40 @@ class MasterComposer {
     public function compose(View $view) {
         $view->socialLinks = [
             [
+                'show'  => false,
+                'title' => 'Facebook',
+                'icon'  => 'facebook',
+                'url'   => 'https://www.facebook.com/divspace'
+            ],
+            [
+                'show'  => false,
                 'title' => 'Twitter',
                 'icon'  => 'twitter',
-                'url'   => 'https://twitter.com/divspace'
+                'url'   => 'https://twitter.com/divspace',
             ],
             [
+                'show'  => true,
                 'title' => 'LinkedIn',
                 'icon'  => 'linkedin',
-                'url'   => 'https://www.linkedin.com/in/kjanderson83'
+                'url'   => 'https://www.linkedin.com/in/divspace'
             ],
             [
+                'show'  => false,
+                'title' => 'Bitbucket',
+                'icon'  => 'bitbucket',
+                'url'   => 'https://bitbucket.org/divspace'
+            ],
+            [
+                'show'  => true,
                 'title' => 'GitHub',
                 'icon'  => 'github',
                 'url'   => 'https://github.com/divspace'
             ],
             [
+                'show'  => true,
                 'title' => 'Stack Overflow',
                 'icon'  => 'stack-overflow',
-                'url'   => 'http://stackoverflow.com/users/5361065/kyle-anderson'
+                'url'   => 'https://stackoverflow.com/users/5361065'
             ]
         ];
     }

@@ -30,13 +30,15 @@
                 <p class="pull-left">&copy; {{ date('Y') }} <a href="mailto:kyle@divspace.com">Kyle Anderson</a>.</p>
                 <ul class="pull-right">
                     @foreach($socialLinks as $socialLink)
-                        <li>
-                            <a href="{{ $socialLink['url'] }}" title="{{ $socialLink['title'] }}">
-                                <span class="fa fa-fw fa-{{ $socialLink['icon'] }}">
-                                    <span class="sr-only">{{ $socialLink['title'] }}</span>
-                                </span>
-                            </a>
-                        </li>
+                        @if($socialLink['show'] === true)
+                            <li>
+                                <a href="{{ $socialLink['url'] }}" title="{{ $socialLink['title'] }}">
+                                    <span class="fa fa-fw fa-{{ $socialLink['icon'] }}">
+                                        <span class="sr-only">{{ $socialLink['title'] }}</span>
+                                    </span>
+                                </a>
+                            </li>
+                        @endif
                     @endforeach
                 </ul>
             </footer>

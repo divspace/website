@@ -10,6 +10,10 @@
   font: #{$size}/#{$line-height} system, -apple-system, ".SFNSDisplay-Regular", "Lucida Grande", "Myriad Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+@mixin resume-font($size: 14px, $line-height: 1.4) {
+  font: #{$size}/#{$line-height} "Lucida Grande", "Myriad Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
 @mixin terminal-font($size: 18px, $line-height: 1.4) {
   font: #{$size}/#{$line-height} Hack, "Menlo Regular", "Andale Mono", monospace;
 }
@@ -201,6 +205,16 @@ $footer-link-hover-color: rgb(51, 51, 51);
       }
     }
   }
+}
+
+/*
+ |--------------------------------------------------------------------------
+ | Resume
+ |--------------------------------------------------------------------------
+*/
+
+#resume {
+  @include resume-font;
 }
 
 /*

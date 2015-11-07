@@ -1,5 +1,6 @@
 .DS_Store
 .env
+.phpintel
 /bootstrap/compiled.php
 /bower_components
 /node_modules

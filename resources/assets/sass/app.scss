@@ -230,23 +230,23 @@ body {
 */
 
 #resume {
-  h1 {
+  .resume-title {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
   }
 
-  h2 {
+  .resume-occupation {
     font-weight: bold;
     text-align: center;
   }
 
-  h3 {
+  .resume-section {
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  .contact {
+  .resume-contact {
     list-style: none;
     margin-left: 0;
     text-align: center;
@@ -265,7 +265,7 @@ body {
     }
   }
 
-  table {
+  .resume-core-skills {
     width: 100%;
     margin-bottom: 1rem;
 
@@ -277,26 +277,32 @@ body {
         text-align: center;
       }
     }
+  }
 
-    & + p {
-      text-align: center;
+  .resume-short-description, .resume-long-description {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    p {
+      margin-bottom: 0;
     }
   }
 
-  .box {
-    text-align: center;
+  .resume-long-description {
     border: 2px solid #000;
     padding: 1rem;
   }
 
-  .experience {
-    .duration {
+  .resume-job {
+    .resume-job-duration {
       text-align: right;
     }
   }
 
-  .skill {
-    font-weight: bold;
+  .resume-skills {
+    .resume-skill-section {
+      font-weight: bold;
+    }
   }
 }
 

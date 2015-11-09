@@ -20,7 +20,7 @@ var packages = {
 
 elixir(function(mix) {
   mix
-    .clear([assets.css, assets.js])
+    .clear([assets.css, assets.js, assets.fonts])
 
     .copy(packages.fontAwesome + '/fonts/**', assets.fonts)
 

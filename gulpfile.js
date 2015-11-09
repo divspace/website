@@ -14,19 +14,30 @@ var packages = {
   fontAwesome: './bower_components/font-awesome',
   hack: './bower_components/hack/build/webfonts',
   jquery: './bower_components/jquery/dist',
-  typedJs: './bower_components/typed-js/js'
+  typedJs: './bower_components/typed-js/js',
+  sourceSansPro: './bower_components/source-sans-pro/fonts'
 };
 
 elixir(function(mix) {
   mix
     .clear([assets.css, assets.js])
+
     .copy(packages.fontAwesome + '/fonts/**', assets.fonts)
+
     .copy(packages.hack + '/fonts/**', assets.fonts)
+
+    .copy(packages.sourceSansPro + '/EOT/**', assets.fonts + '/eot')
+    .copy(packages.sourceSansPro + '/WOFF/OTF/**', assets.fonts + '/woff/otf')
+    .copy(packages.sourceSansPro + '/OTF/**', assets.fonts + '/otf')
+    .copy(packages.sourceSansPro + '/TTF/**', assets.fonts + '/ttf')
+
     .sass('app.scss', assets.css)
+
     .styles([
       packages.hack + '/css/hack.css',
       assets.css + '/app.css'
     ], assets.css + '/app.css')
+
     .scripts([
       packages.jquery + '/jquery.js',
       packages.bootstrap + '/bootstrap.js',

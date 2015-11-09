@@ -5,7 +5,7 @@ use Illuminate\Contracts\Routing\Registrar;
 class ContactRoute {
 
     public function map(Registrar $router) {
-        $router->get('conact', 'ContactController@index')->name('index');
+        $router->get('contact', 'ContactController@index')->name('index');
     }
 
 }

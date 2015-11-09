@@ -1,0 +1,23 @@
+footer {
+  ul, p {
+    color: $gray-light;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: $gray-light;
+    text-decoration: none;
+
+    &:hover {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+  }
+}

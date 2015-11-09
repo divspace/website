@@ -1,0 +1,77 @@
+#resume {
+  .resume-title {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -0.5rem;
+  }
+
+  .resume-section {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .resume-contact {
+    color: $gray;
+    text-align: center;
+
+    a {
+      color: $gray;
+      text-decoration: none;
+
+      &:hover {
+        color: $gray-dark;
+      }
+    }
+
+    strong {
+      top: 1px;
+      padding: 0 2px;
+      position: relative;
+      font-size: 1.5rem;
+    }
+  }
+
+  .resume-short-description, .resume-long-description {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .resume-long-description {
+    border: 2px solid $gray-dark;
+    padding: 1rem;
+  }
+
+  .resume-job {
+    .resume-job-position {
+      a {
+        color: $gray;
+        text-decoration: none;
+
+        &:hover {
+          color: $gray-dark;
+        }
+      }
+
+      span {
+        color: $gray;
+      }
+
+    }
+
+    .resume-job-duration {
+      color: $gray;
+      text-align: right;
+    }
+  }
+
+  .resume-skills {
+    .resume-skill-section {
+      font-weight: bold;
+    }
+  }
+}

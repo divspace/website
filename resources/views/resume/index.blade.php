@@ -3,18 +3,9 @@
     <div id="resume">
         <h1 class="resume-title">Kyle Anderson</h1>
         <p class="resume-contact">
-            Scottsdale, AZ <i class="fa fa-circle"></i> <a href="tel:4804344675">(480) 434-4675</a> <i class="fa fa-circle"></i> <a href="mailto:kyle@divspace.com">kyle@divspace.com</a><span class="hidden-sm-down"> <i class="fa fa-circle"></i> <a href="https://linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
+            Scottsdale, AZ <strong>&middot;</strong> <a href="tel:4804344675">(480) 434-4675</a> <strong>&middot;</strong> <a href="mailto:kyle@divspace.com">kyle@divspace.com</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
         </p>
-        <h2 class="resume-occupation">Web Developer &amp; Programmer</h2>
-        <table class="resume-core-skills">
-            <tr>
-                <td>PHP / HTML / CSS</td>
-                <td>Laravel / jQuery / Bootstrap</td>
-                <td class="hidden-xs-down">Systems Administration</td>
-                <td class="hidden-sm-down">Technology Management</td>
-            </tr>
-        </table>
-        <div class="resume-short-description">
+        <div class="resume-short-description hidden-lg-down">
             <p class="hidden-sm-down">
                 Versatile and efficiency focused front- / back-end developer and programmer.
             </p>
@@ -22,7 +13,7 @@
                 Dedicated to building quality, high performance digital experiences, with a passion for translating complex requirements into elegant, functional code.
             </p>
         </div>
-        <div class="resume-long-description">
+        <div class="resume-long-description hidden-lg-down">
             <p>
                 Leverage technical expertise and creativity to innovate web properties that <strong>simplify complexity and enhance user experiences</strong>.
             </p>
@@ -37,7 +28,7 @@
         <div class="resume-job">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-                    <strong>Application Developer</strong><span class="hidden-xs-down"> &mdash; Media Solutions &mdash; Chandler, AZ</span>
+                    <strong>Application Developer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mediasolutionscorp.com">Media Solutions</a> &mdash; Chandler, AZ</span>
                 </div>
                 <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
                     <em>2015 &mdash; Present</em>
@@ -52,7 +43,7 @@
         <div class="resume-job">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-                    <strong>Chief Technology Officer</strong><span class="hidden-xs-down"> &mdash; Smart Source Hosting &mdash; New York, NY</span>
+                    <strong>Chief Technology Officer</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.smartsourcellc.com">Smart Source Hosting</a> &mdash; New York, NY</span>
                 </div>
                 <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
                     <em>2014 &mdash; 2015</em>
@@ -66,7 +57,7 @@
         <div class="resume-job">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-                    <strong>Co-Founder</strong><span class="hidden-xs-down"> &mdash; Crucial Web Hosting &mdash; Phoenix, AZ</span>
+                    <strong>Co-Founder &amp; CTO</strong><span class="hidden-xs-down"> &mdash; <a href="https://www.crucialhosting.com">Crucial Web Hosting</a> &mdash; Phoenix, AZ</span>
                 </div>
                 <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
                     <em>2006 &mdash; 2014</em>
@@ -82,7 +73,7 @@
         <div class="resume-job">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-                    <strong>IT Director</strong><span class="hidden-xs-down"> &mdash; B&amp;D Litho &mdash; Phoenix, AZ</span>
+                    <strong>IT Director</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.bndlithoaz.com">B&amp;D Litho</a> &mdash; Phoenix, AZ</span>
                 </div>
                 <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
                     <em>2001 &mdash; 2002</em>
@@ -93,63 +84,27 @@
                 <li>Developed B&amp;D Litho's online presence and introduced user-friendly technical enhancements to streamline the media submittal process and increase efficiency in the Graphic Design department.</li>
             </ul>
         </div>
-        <h3 class="resume-section">Select Technical Expertise</h3>
+        <h3 class="resume-section"><span class="hidden-xs-down">Select </span>Technical Expertise</h3>
         <div class="resume-skills">
             <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Markup Languages</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">HTML, Jade, YAML</div>
+                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Programming Languages</div>
+                <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">Bash, CoffeeScript, JavaScript, Perl, PHP, SQL</div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Stylesheet Languages</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">CSS, Sass, SCSS, Stylus</div>
+                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">PHP Frameworks</div>
+                <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Slim, Symfony, Yii, Zend Framework</div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Programming Languages</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">Bash, CoffeeScript, JavaScript, Perl, PHP, SQL</div>
+                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>
+                <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">AngularJS, Express.js, Node.js, Sails, Socket.IO</div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Web Application Frameworks</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 resume-skill-items">CodeIgniter, Laravel, Slim, Symfony, Yii, Zend Framework</div>
+                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Solution Stacks</div>
+                <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">LAMP, LEMP, MAMP, MEAN, XAMPP</div>
             </div>
             <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Front-End Frameworks</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">Bootstrap, Font Awesome, Foundation</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">JavaScript Libraries</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">jQuery, jQuery UI</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">AngularJS, Express.js, Node.js, Sails, Socket.IO</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Content Management Systems</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 resume-skill-items">Drupal, ExpressionEngine, Ghost, Joomla, Magento, WordPress</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Package Managers</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">Bower, Composer, CPAN, npm, PEAR</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Data Storage</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">MariaDB, Memcached, MongoDB, MySQL, Percona Server, Redis</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Solution Stacks</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">LAMP, LEMP, MEAN</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Version Control</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">Git, Subversion</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Development Methods</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">Kanban, Scrumban</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-7 col-sm-6 col-md-3 col-lg-3 col-xl-3 resume-skill-section">Development Tools</div>
-                <div class="col-xs-5 col-sm-6 col-md-9 col-lg-9 col-xl-9 resume-skill-items">EditorConfig, Gulp, Homestead, Sublime, Vim, VirtualBox</div>
+                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Data Storage</div>
+                <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">MariaDB, Memcached, MongoDB, MySQL, Redis</div>
             </div>
         </div>
     </div>

@@ -8,15 +8,17 @@
         <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="container invisible">
+        <div class="container">
             <nav class="navbar navbar-light bg-faded">
-                <a class="navbar-brand" href="{{ url() }}">Divspace</a>
-                <ul class="nav navbar-nav invisible">
+                <a class="navbar-brand" href="{{ url() }}" rel="home">
+                    <img class="logo" src="{{ asset('assets/img/logo_transparent.png') }}">
+                </a>
+                <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url() }}">Home <span class="sr-only">(Current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('about') }}">About</a>
+                        <a class="nav-link" href="{{ url('resume') }}">Resume</a>
                     </li>
                 </ul>
             </nav>

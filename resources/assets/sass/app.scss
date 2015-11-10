@@ -1,7 +1,7 @@
 // Vendors
-@import "vendors/bootstrap";
-@import "vendors/bourbon";
-@import "vendors/font-awesome";
+@import "vendor/bootstrap";
+@import "vendor/bourbon";
+@import "vendor/font-awesome";
 
 // Utilities
 @import "utils/variables";
@@ -10,7 +10,7 @@
 // Global Styles
 @import "base/typography";
 
-// Layout
+// Layouts
 @import "layout/body";
 @import "layout/navbar";
 @import "layout/footer";

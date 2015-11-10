@@ -1,10 +1,19 @@
 <?php namespace App\Http\Composers\Layouts;
 
+use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 
 class MasterComposer {
 
+    protected $request;
+
+    public function __construct(Request $request) {
+        $this->request = $request;
+    }
+
     public function compose(View $view) {
+        $view->path = $this->request->path();
+
         $view->socialLinks = [
             [
                 'show'  => false,

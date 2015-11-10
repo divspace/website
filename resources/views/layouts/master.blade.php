@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('resume') }}">Resume</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +32,7 @@
         <div class="container">
             <footer class="text-muted">
                 <hr>
-                <p class="pull-left">&copy; {{ date('Y') }} <a href="mailto:kyle@divspace.com">Kyle Anderson</a>.</p>
+                <p class="pull-left">&copy; {{ date('Y') }} <a href="#" data-toggle="modal" data-target="#contact">Kyle Anderson</a>.</p>
                 <ul class="pull-right">
                     @foreach($socialLinks as $socialLink)
                         @if($socialLink['show'] === true)
@@ -45,6 +48,7 @@
                 </ul>
             </footer>
         </div>
+        @include('forms/_contact')
         <script src="{{ asset('assets/js/app.js') }}"></script>
         @yield('script')
     </body>

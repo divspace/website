@@ -3,7 +3,7 @@
     <div id="resume">
         <h1 class="resume-title">Kyle Anderson</h1>
         <p class="resume-contact">
-            Scottsdale, AZ <strong>&middot;</strong> <a href="tel:4804344675">(480) 434-4675</a> <strong>&middot;</strong> <a href="mailto:kyle@divspace.com">kyle@divspace.com</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
+            Scottsdale, AZ <strong>&middot;</strong> <a href="tel:4804344675">(480) 434-4675</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">kyle@divspace.com</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
         </p>
         <div class="resume-short-description hidden-lg-down">
             <p class="hidden-sm-down">

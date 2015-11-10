@@ -36,6 +36,7 @@ elixir(function(mix) {
     .scripts([
       packages.jquery + '/jquery.js',
       packages.bootstrap + '/bootstrap.js',
-      packages.typedJs + '/typed.js'
+      packages.typedJs + '/typed.js',
+      './resources/assets/js/**'
     ], assets.js + '/app.js')
 });

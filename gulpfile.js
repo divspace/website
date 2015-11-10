@@ -44,6 +44,7 @@ elixir(function(mix) {
       packages.jquery + '/jquery.js',
       packages.bootstrap + '/bootstrap.js',
       packages.formValidation + '/js/form-validation.min.js',
+      packages.formValidation + '/js/framework/bootstrap.min.js',
       packages.typedJs + '/typed.js',
       './resources/assets/js/**'
     ], assets.js + '/app.js');

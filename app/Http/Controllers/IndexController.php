@@ -6,8 +6,9 @@ class IndexController extends Controller {
 
     public function index() {
         $terminal = [
+            'title'  => 'divspace.com',
             'date'   => date('D M d').' 16:20:'.date('s'),
-            'prompt' => 'Mac-Pro&#58;&#126; kyle&#36;'
+            'prompt' => 'Mac-Pro:~ kyle$'
         ];
 
         return view('index', compact('terminal'));

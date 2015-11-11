@@ -6,17 +6,21 @@ use App\Http\Requests\ContactFormRequest;
 class ContactController extends Controller {
 
     public function index(ContactFormRequest $request) {
-        return 'OK';
-
         \Mail::send('emails.contact', [
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'message' => $request->get('message')
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'body' => $request->input('message')
         ], function($message) {
-            $message->from('postmaster@divspace.com');
             $message->to('kyle@divspace.com', 'Kyle Anderson');
-            $message->subject('Divspace.com Contact Form Submission');
+            $message->from('postmaster@divspace.com', 'Divspace');
+            $message->subject('Contact Form Submission');
         });
+
+        return response()->json([
+            'error' => false,
+            'status' => 'OK',
+            'statusCode' => 200
+        ]);
     }
 
 }

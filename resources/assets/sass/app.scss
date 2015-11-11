@@ -8,13 +8,13 @@
 @import "utils/mixins";
 
 // Global Styles
+@import "base/reset";
 @import "base/typography";
 
 // Components
 @import "components/alert";
 
 // Layouts
-@import "layout/body";
 @import "layout/navbar";
 @import "layout/footer";
 

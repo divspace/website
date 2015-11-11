@@ -1,8 +1,15 @@
 footer {
-  margin-top: 40px;
+  color: $gray-light;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
 
-  ul, p {
-    color: $gray-light;
+  margin: {
+    top: ($spacer-y * 4);
+    bottom: $spacer-y;
+  }
+
+  padding: {
+    top: ($spacer-y / 2);
   }
 
   ul {

@@ -18,7 +18,7 @@
                         <a class="nav-link{{ ($path === '/') ? ' active' : '' }}" href="{{ url() }}">Home <span class="sr-only">(Current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link{{ ($path === 'resume') ? ' active' : '' }}" href="{{ url('resume') }}">Resume</a>
+                        <a class="nav-link{{ ($path === 'resume') ? ' active' : '' }}" href="{{ url('resume') }}">R&eacute;sum&eacute;</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>

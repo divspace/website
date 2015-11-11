@@ -24,19 +24,6 @@
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav pull-right">
-                    @foreach($socialLinks as $socialLink)
-                        @if($socialLink['show'] === true)
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ $socialLink['url'] }}" title="{{ $socialLink['title'] }}">
-                                    <span class="fa fa-fw fa-{{ $socialLink['icon'] }}">
-                                        <span class="sr-only">{{ $socialLink['title'] }}</span>
-                                    </span>
-                                </a>
-                            </li>
-                        @endif
-                    @endforeach
-                </ul>
             </nav>
         </div>
         <div class="container">

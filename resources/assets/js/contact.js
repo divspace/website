@@ -70,8 +70,7 @@
     .on('success.form.fv', function(event) {
       event.preventDefault();
 
-      var $form = $(event.target),
-          fv = $(event.target).data('formValidation');
+      var $form = $(event.target);
 
       $.ajax({
         type: 'POST',
@@ -80,7 +79,24 @@
       })
       .done(function(response) {
         $form.formValidation('resetForm', true);
+
         $('#contact').modal('hide');
+
+        var content = '';
+
+        content += '<div class="alert alert-success alert-dismissible fade in" role="alert">';
+        content += '    <button class="close" type="button" data-dismiss="alert" aria-label="Close">';
+        content += '        <span aria-hidden="true">&times;</span>';
+        content += '        <span class="sr-only">Close</span>';
+        content += '    </button>';
+        content += '    <strong>Thanks!</strong> Your message has been sent. I will get back to you as soon as possible.';
+        content += '</div>';
+
+        $('#message').html(content);
+
+        $('html, body').scrollTop(0);
+
+        return false;
       });
     });
   });

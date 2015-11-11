@@ -1,11 +1,11 @@
 #terminal {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   background: #fff;
   overflow: hidden;
 
   @include border-radius(5px);
-  @include box-shadow(0, 7px, 30px, rgba(0, 0, 0, 0.5));
+  @include box-shadow(0px, 7px, 30px, rgba(0,0,0,.5));
 
   #toolbar {
     width: 100%;
@@ -17,9 +17,9 @@
       bottom: 1px solid $toolbar-bottom-border-color;
     }
 
-    @include border-radius(5px 5px 0 0);
+    @include border-radius(5px 5px 0px 0px);
     @include linear-gradient(to bottom, $toolbar-color-stop-1 0%, $toolbar-color-stop-2 100%);
-    @include box-shadow-inset(0, 1px, 0, $toolbar-shadow-color, 0, 1px, 0, rgba(255, 255, 255, 0.5));
+    @include box-shadow-inset(0px, 1px, 0px, $toolbar-shadow-color, 0px, 1px, 0px, rgba(255,255,255,.5));
 
     .top {
       float: left;
@@ -28,7 +28,7 @@
 
       #title {
         width: 84px;
-        margin: 10px auto 0 auto;
+        margin: 10px auto 0px auto;
         color: $title-color;
 
         @include system-font(14px, 0);
@@ -47,7 +47,7 @@
           overflow: hidden;
 
           @include border-radius(6px);
-          @include box-shadow-inset(0, 1px, 0, rgba(255, 255, 255, 0.5), 0, 0, 3px, rgb(0, 0, 0));
+          @include box-shadow-inset(0px, 1px, 0px, rgba(255,255,255,.5), 0px, 0px, 3px, rgb(0,0,0));
         }
 
         .red {
@@ -56,7 +56,7 @@
         }
 
         .yellow {
-          margin: 0 8px;
+          margin: 0px 8px;
           border: 1px solid $yellow-light-border-color;
           background: $yellow-light-color;
         }
@@ -73,18 +73,18 @@
     float: left;
     width: 100%;
     min-height: 600px;
-    padding: 0 5px;
+    padding: 0px 5px;
     background: $screen-color;
 
     border: {
       style: solid;
-      width: 0 1px 1px 1px;
+      width: 0px 1px 1px 1px;
       color: $screen-border-color;
     }
 
     p {
       color: $terminal-color;
-      margin: 1px 0 5px 0;
+      margin: 1px 0px 5px 0px;
 
       @include fixed-font;
 
@@ -101,13 +101,13 @@
       display: inline-block;
       width: 11px;
       height: 26px;
-      margin: 0 0 -6px 0;
+      margin: 0px 0px -6px 0px;
       border: 1px solid $cursor-color;
       opacity: 1;
     }
 
     &:hover .cursor {
-      border-width: 0 0 0 1px;
+      border-width: 0px 0px 0px 1px;
 
       animation: {
         name: blink;

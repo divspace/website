@@ -9,6 +9,10 @@ draw_white_space = all
 trim_trailing_whitespace = true
 trim_trailing_white_space_on_save = true
 
+[*.blade.php]
+indent_size = 2
+quote_type = double
+
 [*.{css,js,json,less,sass,scss,styl,yml}]
 indent_size = 2
 

@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <nav class="navbar navbar-light bg-faded">
-                <a class="navbar-brand" href="{{ url() }}" rel="home">
+                <a class="navbar-brand" href="{{ url('/') }}" rel="home">
                     <img class="logo" src="{{ asset('assets/img/logo-sm.png') }}" width="68" height="20">
                 </a>
                 <ul class="nav navbar-nav">
@@ -40,6 +40,7 @@
             </nav>
         </div>
         <div class="container">
+            <div id="message"></div>
             @yield('content')
         </div>
         <div class="container">

@@ -27,11 +27,8 @@
       height: 20px;
 
       #title {
-        float: left;
-        width: 40%;
-        top: 10px;
-        left: 42.5%;
-        position: relative;
+        width: 84px;
+        margin: 10px auto 0 auto;
         color: $title-color;
 
         @include system-font(14px, 0);

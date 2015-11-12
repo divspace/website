@@ -50,23 +50,22 @@
 
   .resume-job {
     .resume-job-position {
-      a {
-        color: $gray;
-        text-decoration: none;
+      span {
+        color: $gray-light;
 
-        &:hover {
-          color: $gray-dark;
+        a {
+          color: $gray-light;
+          text-decoration: none;
+
+          &:hover {
+            color: $gray-dark;
+          }
         }
       }
-
-      span {
-        color: $gray;
-      }
-
     }
 
     .resume-job-duration {
-      color: $gray;
+      color: $gray-light;
       text-align: right;
     }
   }

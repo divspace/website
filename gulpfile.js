@@ -15,31 +15,21 @@ var packages = {
   formValidation: './resources/vendor/form-validation',
   hack: './bower_components/hack/build/webfonts',
   jquery: './bower_components/jquery/dist',
-  typedJs: './bower_components/typed-js/js',
-  sourceSansPro: './bower_components/source-sans-pro/fonts'
+  typedJs: './bower_components/typed-js/js'
 };
 
 elixir(function(mix) {
   mix
     .clear([assets.css, assets.fonts, assets.img, assets.js])
-
     .copy('./resources/assets/img/**', assets.img)
-
     .copy(packages.fontAwesome + '/fonts/**', assets.fonts)
-    .copy(packages.hack + '/fonts/**', assets.fonts)
-    .copy(packages.sourceSansPro + '/EOT/**', assets.fonts + '/eot')
-    .copy(packages.sourceSansPro + '/WOFF/OTF/**', assets.fonts + '/woff/otf')
-    .copy(packages.sourceSansPro + '/OTF/**', assets.fonts + '/otf')
-    .copy(packages.sourceSansPro + '/TTF/**', assets.fonts + '/ttf')
-
+    .copy(packages.hack + '/fonts/woff2/latin/**', assets.fonts)
     .sass('app.scss', assets.css)
-
     .styles([
       packages.formValidation + '/css/form-validation.css',
       packages.hack + '/css/hack.css',
       assets.css + '/app.css'
     ], assets.css + '/app.css')
-
     .scripts([
       packages.jquery + '/jquery.js',
       packages.bootstrap + '/bootstrap.js',

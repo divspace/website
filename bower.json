@@ -12,6 +12,8 @@
     "bourbon": "~4.2.6",
     "hack": "chrissimpkins/Hack#v2.015",
     "jquery": "~2.1.4",
+    "pt-serif": "~1.0.0",
+    "source-sans-pro": "~1.0.0",
     "typed-js": "typed.js#~1.1.1"
   }
 }

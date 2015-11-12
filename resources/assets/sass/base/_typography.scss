@@ -1,95 +1,65 @@
 @font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 200;
-      style: normal;
-      stretch: normal;
-    }
+  font: {
+    family: "Source Sans Pro";
+    style: normal;
+    weight: 400;
+  }
 
-    src: local("SourceSansPro-ExtraLight"),
-         local("Source Sans Pro"),
-         url("../fonts/eot/SourceSansPro-ExtraLight.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-ExtraLight.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-ExtraLight.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-ExtraLight.ttf") format("truetype");
+  src: local("Source Sans Pro"),
+       local("SourceSansPro-Regular"),
+       url("https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2") format("woff2");
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 300;
-      style: normal;
-      stretch: normal;
-    }
+  font: {
+    family: "Source Sans Pro";
+    style: normal;
+    weight: 700;
+  }
 
-    src: local("SourceSansPro-Light"),
-         local("Source Sans Pro"),
-         url("../fonts/eot/SourceSansPro-Light.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-Light.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-Light.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-Light.ttf") format("truetype");
+  src: local("Source Sans Pro Bold"),
+       local("SourceSansPro-Bold"),
+       url("https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2") format("woff2");
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 400;
-      style: normal;
-      stretch: normal;
-    }
+  font: {
+    family: "Source Sans Pro";
+    style: italic;
+    weiht: 400;
+  }
 
-    src: local("SourceSansPro-Regular"),
-         local("Source Sans Pro"),
-         url("../fonts/eot/SourceSansPro-Regular.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-Regular.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-Regular.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-Regular.ttf") format("truetype");
+  src: local("Source Sans Pro Italic"),
+       local("SourceSansPro-It"),
+       url("https://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM2Sl3jWJ3D9poyJPMfASioc.woff2") format("woff2");
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 600;
-      style: normal;
-      stretch: normal;
-    }
+  font: {
+    family: "Hack";
+    style: normal;
+    weight: 400;
+  }
 
-    src: local("SourceSansPro-Semibold"),
-         local("Source Sans Pro Semibold"),
-         url("../fonts/eot/SourceSansPro-Semibold.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-Semibold.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-Semibold.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-Semibold.ttf") format("truetype");
+  src: local("Hack Regular"),
+       local("Hack-Regular"),
+       url("../fontshack-regular-latin-webfont.woff2") format("woff2");
 }
 
 @font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 700;
-      style: normal;
-      stretch: normal;
-    }
+  font: {
+    family: "Hack";
+    style: normal;
+    weight: 700;
+  }
 
-    src: local("SourceSansPro-Bold"),
-         local("Source Sans Pro Bold"),
-         url("../fonts/eot/SourceSansPro-Bold.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-Bold.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-Bold.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font: {
-      family: "Source Sans Pro";
-      weight: 900;
-      style: normal;
-      stretch: normal;
-    }
-
-    src: local("SourceSansPro-Black"),
-         local("Source Sans Pro Black"),
-         url("../fonts/eot/SourceSansPro-Black.eot") format("embedded-opentype"),
-         url("../fonts/woff/otf/SourceSansPro-Black.otf.woff") format("woff"),
-         url("../fonts/otf/SourceSansPro-Black.otf") format("opentype"),
-         url("../fonts/ttf/SourceSansPro-Black.ttf") format("truetype");
+  src: local("Hack Bold"),
+       local("Hack-Bold"),
+       url("../fontshack-bold-latin-webfont.woff2") format("woff2");
 }

@@ -12,7 +12,7 @@ var assets = {
 var packages = {
   bootstrap: './bower_components/bootstrap/dist/js',
   formValidation: './resources/vendor/form-validation',
-  hack: './bower_components/hack/build/webfonts',
+  hack: './bower_components/hack/fonts',
   jquery: './bower_components/jquery/dist',
   ptSerif: './bower_components/pt-serif/fonts',
   sourceSansPro: './bower_components/source-sans-pro/fonts',
@@ -26,17 +26,9 @@ elixir(function(mix) {
     // Images
     .copy('./resources/assets/img/**', assets.img)
 
-    // Hack
-    .copy(packages.hack + '/fonts/eot/latin/*.eot', assets.fonts + '/hack')
-    .copy(packages.hack + '/fonts/svg/latin/*.svg', assets.fonts + '/hack')
-    .copy(packages.hack + '/fonts/web-ttf/latin/*.ttf', assets.fonts + '/hack')
-    .copy(packages.hack + '/fonts/woff/latin/*.woff', assets.fonts + '/hack')
-    .copy(packages.hack + '/fonts/woff2/latin/*.woff2', assets.fonts + '/hack')
-
-    // PT Serif
+    // Fonts
+    .copy(packages.hack + '/**', assets.fonts)
     .copy(packages.ptSerif + '/**', assets.fonts)
-
-    // Source Sans Pro
     .copy(packages.sourceSansPro + '/**', assets.fonts)
 
     // SCSS

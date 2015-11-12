@@ -26,7 +26,6 @@ elixir(function(mix) {
     .sass('app.scss', assets.css)
     .styles([
       packages.formValidation + '/css/form-validation.css',
-      packages.hack + '/css/hack.css',
       assets.css + '/app.css'
     ], assets.css + '/app.css')
     .scripts([

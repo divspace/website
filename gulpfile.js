@@ -22,6 +22,7 @@ elixir(function(mix) {
   mix
     .clear([assets.css, assets.fonts, assets.img, assets.js])
     .copy('./resources/assets/img/**', assets.img)
+    .copy('./resources/assets/fonts/**', assets.fonts)
     .copy(packages.fontAwesome + '/fonts/**', assets.fonts)
     .copy(packages.hack + '/fonts/woff2/latin/**', assets.fonts)
     .sass('app.scss', assets.css)

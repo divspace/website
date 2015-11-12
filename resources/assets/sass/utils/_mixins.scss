@@ -16,6 +16,15 @@
   line-height: #{$line-height};
 }
 
+@mixin serif-font($size: 15px, $line-height: 1.6) {
+  font: {
+    size: #{$size};
+    family: $serif-font;
+  }
+
+  line-height: #{$line-height};
+}
+
 @mixin system-font($size: 15px, $line-height: 1.5) {
   font: {
     size: #{$size};

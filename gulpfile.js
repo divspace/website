@@ -11,7 +11,6 @@ var assets = {
 
 var packages = {
   bootstrap: './bower_components/bootstrap/dist/js',
-  fontAwesome: './bower_components/font-awesome',
   formValidation: './resources/vendor/form-validation',
   hack: './bower_components/hack/build/webfonts',
   jquery: './bower_components/jquery/dist',
@@ -23,7 +22,6 @@ elixir(function(mix) {
     .clear([assets.css, assets.fonts, assets.img, assets.js])
     .copy('./resources/assets/img/**', assets.img)
     .copy('./resources/assets/fonts/**', assets.fonts)
-    .copy(packages.fontAwesome + '/fonts/**', assets.fonts)
     .copy(packages.hack + '/fonts/woff2/latin/**', assets.fonts)
     .sass('app.scss', assets.css)
     .styles([

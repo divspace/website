@@ -14,8 +14,8 @@ var packages = {
   formValidation: './resources/vendor/form-validation',
   hack: './bower_components/hack/fonts',
   jquery: './bower_components/jquery/dist',
-  ptSerif: './bower_components/pt-serif/fonts',
   sourceSansPro: './bower_components/source-sans-pro/fonts',
+  sourceSerifPro: './bower_components/source-serif-pro/fonts',
   typedJs: './bower_components/typed-js/js'
 };
 
@@ -28,8 +28,8 @@ elixir(function(mix) {
 
     // Fonts
     .copy(packages.hack + '/**', assets.fonts)
-    .copy(packages.ptSerif + '/**', assets.fonts)
     .copy(packages.sourceSansPro + '/**', assets.fonts)
+    .copy(packages.sourceSerifPro + '/**', assets.fonts)
 
     // SCSS
     .sass('app.scss', assets.css)

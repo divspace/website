@@ -2,15 +2,10 @@
   "name": "divspace",
   "version": "1.0.0",
   "private": true,
-  "moduleType": [
-    "globals"
-  ],
   "ignore": [
     "**/.*",
     "bower_components",
-    "node_modules",
-    "test",
-    "tests"
+    "node_modules"
   ],
   "dependencies": {
     "bootstrap": "~4.0.0",

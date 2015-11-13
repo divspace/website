@@ -12,7 +12,6 @@
     "bourbon": "~4.2.6",
     "hack": "~1.0.0",
     "jquery": "~2.1.4",
-    "jquery-input-mask": "jquery.inputmask#~3.2.3",
     "source-sans-pro": "~1.0.0",
     "source-serif-pro": "divspace/source-serif-pro#~1.0.0",
     "typed-js": "typed.js#~1.1.1"

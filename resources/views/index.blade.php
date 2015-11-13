@@ -26,7 +26,7 @@
         <br>
         {{ $terminal['prompt'] }} <span class="command">cd /home/divspace</span>
         <br>
-        {{ $terminal['prompt'] }} <span class="command">git clone https://github.com/divspace/website.git</span>
+        {{ $terminal['prompt'] }} <span class="command">git clone git@github.com:divspace/website.git</span>
         <br>
         {{ $terminal['prompt'] }} <span class="command">composer install</span>
         <br>

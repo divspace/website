@@ -12,7 +12,24 @@ class MasterComposer {
     }
 
     public function compose(View $view) {
-        $view->path = $this->request->path();
+        $path = $this->request->path();
+
+        $view->pageTitle = 'Divspace';
+
+        $view->navbarLinks = [
+            [
+                'title'   => 'Home',
+                'url'     => url('/'),
+                'active'  => ($path === '/') ? ' active' : '',
+                'current' => ($path === '/') ? ' <span class="sr-only">(Current)</span>' : ''
+            ],
+            [
+                'title'   => 'R&eacute;sum&eacute;',
+                'url'     => url('resume'),
+                'active'  => ($path === 'resume') ? ' active' : '',
+                'current' => ($path === 'resume') ? ' <span class="sr-only">(Current)</span>' : ''
+            ]
+        ];
 
         $view->socialLinks = [
             [

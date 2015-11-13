@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Divspace</title>
+    <title>{{ $pageTitle }}</title>
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
   </head>
   <body>
@@ -14,12 +14,11 @@
           <img class="logo" src="{{ asset('assets/img/logo-sm.png') }}" width="68" height="20">
         </a>
         <ul class="nav navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link{{ ($path === '/') ? ' active' : '' }}" href="{{ url() }}">Home <span class="sr-only">(Current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link{{ ($path === 'resume') ? ' active' : '' }}" href="{{ url('resume') }}">R&eacute;sum&eacute;</a>
-          </li>
+          @foreach($navbarLinks as $navbarLink)
+            <li class="nav-item">
+              <a class="nav-link{{ $navbarLink['active'] }}" href="{{ $navbarLink['url'] }}">{{ $navbarLink['title'] }}{!! $navbarLink['current'] !!}</a>
+            </li>
+          @endforeach
           <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
           </li>

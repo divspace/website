@@ -1,14 +1,14 @@
+// Variables
+@import "utils/variables";
+
 // Vendors
 @import "vendor/bootstrap";
-@import "vendor/bourbon";
+@import "vendor/hack";
+@import "vendor/source-sans-pro";
+@import "vendor/source-serif-pro";
 
-// Utilities
-@import "utils/variables";
+// Mixins
 @import "utils/mixins";
-
-// Global Styles
-@import "base/reset";
-@import "base/typography";
 
 // Components
 @import "components/alert";

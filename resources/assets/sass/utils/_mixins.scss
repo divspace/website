@@ -1,43 +1,10 @@
-@mixin body-font($size: 15px, $line-height: 1.6) {
+@mixin font($family, $size, $line-height) {
   font: {
+    family: $family;
     size: #{$size};
-    family: $body-font;
   }
 
   line-height: #{$line-height};
-}
-
-@mixin fixed-font($size: 18px, $line-height: 1.4) {
-  font: {
-    size: #{$size};
-    family: $fixed-font;
-  }
-
-  line-height: #{$line-height};
-}
-
-@mixin serif-font($size: 15px, $line-height: 1.6) {
-  font: {
-    size: #{$size};
-    family: $serif-font;
-  }
-
-  line-height: #{$line-height};
-}
-
-@mixin system-font($size: 15px, $line-height: 1.5) {
-  font: {
-    size: #{$size};
-    family: $system-font;
-  }
-
-  line-height: #{$line-height};
-}
-
-@mixin font-smoothing() {
-  -moz-osx-font-smoothing: grayscale;
-   -webkit-font-smoothing: antialiased;
-              font-smooth: always;
 }
 
 @mixin border-radius($radius) {

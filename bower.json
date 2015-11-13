@@ -9,7 +9,6 @@
   ],
   "dependencies": {
     "bootstrap": "~4.0.0",
-    "bourbon": "~4.2.6",
     "hack": "~1.0.0",
     "jquery": "~2.1.4",
     "source-sans-pro": "~1.0.0",

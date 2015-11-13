@@ -63,7 +63,7 @@ class MasterComposer {
                 'url'   => 'https://github.com/divspace'
             ],
             [
-                'show'  => true,
+                'show'  => false,
                 'title' => 'Stack Overflow',
                 'icon'  => 'stack-overflow',
                 'url'   => 'https://stackoverflow.com/users/5361065'

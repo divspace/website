@@ -75,18 +75,35 @@
       </ul>
     </div>
     <h3 class="resume-section">Select Technical Skills</h3>
+    <div class="icons">
+      <ul>
+        <li><span class="devicon-angularjs-plain"></span></li>
+        <li><span class="devicon-bootstrap-plain"></span></li>
+        <li><span class="devicon-codeigniter-plain"></span></li>
+        <li><span class="devicon-git-plain"></span></li>
+        <li><span class="devicon-github-plain"></span></li>
+        <li><span class="devicon-html5-plain"></span></li>
+        <li><span class="devicon-javascript-plain"></span></li>
+        <li><span class="devicon-laravel-plain"></span></li>
+        <li><span class="devicon-nodejs-plain"></span></li>
+        <li><span class="devicon-redis-plain"></span></li>
+        <li><span class="devicon-sass-plain"></span></li>
+        <li><span class="devicon-symfony-plain"></span></li>
+        <li><span class="devicon-yii-plain"></span></li>
+      </ul>
+    </div>
     <div class="resume-skills">
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Programming Languages</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">Bash, CoffeeScript, JavaScript, Perl, PHP, SQL</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">Bash, JavaScript, Perl, PHP, SQL</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">PHP Frameworks</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Slim, Symfony, Yii, Zend Framework</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Slim, Symfony, Yii</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">AngularJS, Express.js, Node.js, Sails, Socket.IO</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">AngularJS, Node.js, Socket.IO, Vue.js</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Solution Stacks</div>
@@ -94,7 +111,7 @@
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Data Storage</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">MariaDB, Memcached, MongoDB, MySQL, Redis</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">MongoDB, MySQL, Redis</div>
       </div>
     </div>
   </div>

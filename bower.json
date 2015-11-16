@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "bootstrap": "~4.0.0",
-    "devicon": "divspace/devicon",
+    "devicon": "divspace/devicon#~1.0.0",
     "font-awesome": "~4.4.0",
     "hack": "~1.0.0",
     "jquery": "~2.1.4",

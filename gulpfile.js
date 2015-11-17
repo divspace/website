@@ -10,7 +10,6 @@ var assets = {
 };
 
 var fonts = {
-  devicon: './bower_components/devicon/fonts',
   fontAwesome: './bower_components/font-awesome/fonts',
   hack: './bower_components/hack/fonts',
   sourceSansPro: './bower_components/source-sans-pro/fonts',
@@ -32,7 +31,6 @@ elixir(function(mix) {
     .copy('./resources/assets/img/**', assets.img)
 
     // Fonts
-    .copy(fonts.devicon + '/**', assets.fonts)
     .copy(fonts.fontAwesome + '/fontawesome-webfont.*', assets.fonts + '/font-awesome')
     .copy(fonts.hack + '/**', assets.fonts)
     .copy(fonts.sourceSansPro + '/**', assets.fonts)

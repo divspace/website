@@ -75,23 +75,6 @@
       </ul>
     </div>
     <h3 class="resume-section">Select Technical Skills</h3>
-    <div class="icons">
-      <ul>
-        <li><span class="devicon-angularjs-plain"></span></li>
-        <li><span class="devicon-bootstrap-plain"></span></li>
-        <li><span class="devicon-codeigniter-plain"></span></li>
-        <li><span class="devicon-git-plain"></span></li>
-        <li><span class="devicon-github-plain"></span></li>
-        <li><span class="devicon-html5-plain"></span></li>
-        <li><span class="devicon-javascript-plain"></span></li>
-        <li><span class="devicon-laravel-plain"></span></li>
-        <li><span class="devicon-nodejs-plain"></span></li>
-        <li><span class="devicon-redis-plain"></span></li>
-        <li><span class="devicon-sass-plain"></span></li>
-        <li><span class="devicon-symfony-plain"></span></li>
-        <li><span class="devicon-yii-plain"></span></li>
-      </ul>
-    </div>
     <div class="resume-skills">
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Programming Languages</div>

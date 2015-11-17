@@ -75,30 +75,4 @@
       font-weight: bold;
     }
   }
-
-  .icons {
-    color: $gray;
-    font-size: 2rem;
-
-    ul {
-      list-style: none;
-      padding-left: 0px;
-
-      li {
-        float: left;
-        display: inline-block;
-        padding: 0px 20px;
-      }
-
-      &:before,
-      &:after {
-        content: " ";
-        display: table;
-      }
-
-      &:after {
-        clear: both;
-      }
-    }
-  }
 }

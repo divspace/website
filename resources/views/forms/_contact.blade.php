@@ -10,6 +10,7 @@
       </div>
       <div class="modal-body">
         <form id="contact-form" action="{{ url('contact') }}" method="POST">
+          {!! Honeypot::generate('first_name', 'last_name') !!}
           <div class="form-group">
             <label for="name">Name</label>
             <input class="form-control" id="name" name="name" type="text">

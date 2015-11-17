@@ -36,7 +36,9 @@ return [
 
         App\Providers\AppServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
-        App\Providers\RouteServiceProvider::class
+        App\Providers\RouteServiceProvider::class,
+
+        Msurguy\Honeypot\HoneypotServiceProvider::class
     ],
     'aliases' => [
         'App'       => Illuminate\Support\Facades\App::class,
@@ -71,6 +73,8 @@ return [
         'Storage'   => Illuminate\Support\Facades\Storage::class,
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View'      => Illuminate\Support\Facades\View::class
+        'View'      => Illuminate\Support\Facades\View::class,
+
+        'Honeypot'  => Msurguy\Honeypot\HoneypotFacade::class
     ]
 ];

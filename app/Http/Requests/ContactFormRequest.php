@@ -12,7 +12,9 @@ class ContactFormRequest extends Request {
         return [
             'name' => 'required',
             'email' => 'required|email|max:512',
-            'message' => 'required'
+            'message' => 'required',
+            'first_name' => 'honeypot',
+            'last_name' => 'required|honeytime:5'
         ];
     }
 

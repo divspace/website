@@ -11,6 +11,11 @@
   .resume-section {
     font-weight: bold;
     text-transform: uppercase;
+    padding-bottom: ($spacer-y / 2);
+    margin-top: ($spacer-y * 2);
+    margin-bottom: $spacer-y;
+    border: 0px;
+    border-bottom: $hr-border-width solid $hr-border-color;
   }
 
   .resume-contact {

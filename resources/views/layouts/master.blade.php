@@ -47,7 +47,7 @@
         </ul>
       </footer>
     </div>
-    @include('forms/_contact')
+    @include('forms/contact')
     <script src="{{ asset('assets/js/app.js') }}"></script>
     @yield('script')
   </body>

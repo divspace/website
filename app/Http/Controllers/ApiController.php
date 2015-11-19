@@ -6,12 +6,6 @@ use App\Http\Controllers\Controller;
 class ApiController extends Controller {
 
     public function record(Request $request) {
-        $xml = '<Response></Response>';
-
-        $response = Response::make($xml, 200);
-
-        $response->header('Content-Type', 'text/xml');
-
         \Mail::send('emails.voicemail', [
             'from' => $request->input('From'),
             'forwardedFrom' => $request->input('ForwardedFrom'),
@@ -23,7 +17,9 @@ class ApiController extends Controller {
             $message->subject('Message From '.$request->input('From').' ('.$request->input('RecordingDuration').')');
         });
 
-        return $response;
+        $xml = '<Response></Response>';
+
+        return response($xml, 200)->header('Content-Type', 'text/xml');
     }
 
     public function sms() {
@@ -42,11 +38,7 @@ class ApiController extends Controller {
         $xml .= '  <Record action="'.env('APP_URL').'/api/record" maxLength="300" />';
         $xml .= '</Response>';
 
-        $response = Response::make($xml, 200);
-
-        $response->header('Content-Type', 'text/xml');
-
-        return $response;
+        return response($xml, 200)->header('Content-Type', 'text/xml');
     }
 
 }

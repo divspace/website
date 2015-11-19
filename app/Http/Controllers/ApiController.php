@@ -9,7 +9,7 @@ class ApiController extends Controller {
         \Mail::send('emails.voicemail', [
             'from' => $request->input('From'),
             'forwardedFrom' => $request->input('ForwardedFrom'),
-            'message' => $request->input('RecordingUrl').'.mp3',
+            'message' => $request->input('RecordingUrl'),
             'duration' => $request->input('RecordingDuration')
         ], function($message) {
             $message->to('kyle@divspace.com', 'Kyle Anderson');
@@ -31,11 +31,8 @@ class ApiController extends Controller {
         $xml .= '  <Dial callerId="'.env('TWILIO_NUMBER').'" timeout="15">';
         $xml .= '    <Number>'.env('PHONE_NUMBER').'</Number>';
         $xml .= '  </Dial>';
-        $xml .= '  <Say voice="man">';
-        $xml .= '    I am currently unavailable.';
-        $xml .= '    Please leave a message after the beep.';
-        $xml .= '  </Say>';
-        $xml .= '  <Record action="'.env('APP_URL').'/api/record" maxLength="300" />';
+        $xml .= '  <Say voice="man">I am currently unavailable. Please leave a message after the beep.</Say>';
+        $xml .= '  <Record action="'.env('APP_URL').'/api/record" method="POST" maxLength="300" />';
         $xml .= '</Response>';
 
         return response($xml, 200)->header('Content-Type', 'text/xml');

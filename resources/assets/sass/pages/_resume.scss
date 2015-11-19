@@ -29,6 +29,11 @@
       &:hover {
         color: $gray-dark;
       }
+
+      &[data-target="#contact"] {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
     }
 
     strong {

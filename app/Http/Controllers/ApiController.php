@@ -9,12 +9,12 @@ class ApiController extends Controller {
         \Mail::send('emails.voicemail', [
             'from' => $request->input('From'),
             'forwardedFrom' => $request->input('ForwardedFrom'),
-            'message' => $request->input('RecordingUrl'),
+            'voicemail' => $request->input('RecordingUrl'),
             'duration' => $request->input('RecordingDuration')
         ], function($message) {
             $message->to('kyle@divspace.com', 'Kyle Anderson');
             $message->from('postmaster@divspace.com', 'Divspace');
-            $message->subject('Message From '.$request->input('From').' ('.$request->input('RecordingDuration').')');
+            $message->subject('New Voicemail');
         });
 
         $xml = '<Response></Response>';

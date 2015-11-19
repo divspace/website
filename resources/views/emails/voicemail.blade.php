@@ -20,7 +20,7 @@
       <strong>Message</strong>
     </td>
     <td valign="top">
-      {{ $message }}
+      {{ $voicemail }}
     </td>
   </tr>
   <tr>

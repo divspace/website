@@ -19,13 +19,13 @@ class MasterComposer {
         $view->navbarLinks = [
             [
                 'title'   => 'Home',
-                'url'     => url('/'),
+                'url'     => route('home.index'),
                 'active'  => ($path === '/') ? ' active' : '',
                 'current' => ($path === '/') ? ' <span class="sr-only">(Current)</span>' : ''
             ],
             [
                 'title'   => 'R&eacute;sum&eacute;',
-                'url'     => url('resume'),
+                'url'     => route('resume.index'),
                 'active'  => ($path === 'resume') ? ' active' : '',
                 'current' => ($path === 'resume') ? ' <span class="sr-only">(Current)</span>' : ''
             ]

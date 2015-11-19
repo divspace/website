@@ -9,7 +9,7 @@
         <h4 class="modal-title" id="contact-form-title">Contact</h4>
       </div>
       <div class="modal-body">
-        <form id="contact-form" action="{{ url('contact') }}" method="POST">
+        <form id="contact-form" action="{{ route('contact.index') }}" method="POST">
           {!! Honeypot::generate('first_name', 'last_name') !!}
           <div class="form-group">
             <label for="name">Name</label>

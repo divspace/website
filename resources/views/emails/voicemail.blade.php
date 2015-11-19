@@ -4,15 +4,7 @@
       <strong>From</strong>
     </td>
     <td width="85%" valign="top">
-      {{ $from }}
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <strong>Fowarded From</strong>
-    </td>
-    <td valign="top">
-      {{ $forwardedFrom }}
+      <a href="tel:{{ $phoneNumber }}">{{ preg_replace('/^\+([0-9]{3})([0-9]{3})([0-9]{4})$/', '(${1}) ${2}-${3}', $phoneNumber) }}</a>
     </td>
   </tr>
   <tr>
@@ -20,15 +12,7 @@
       <strong>Message</strong>
     </td>
     <td valign="top">
-      {{ $voicemail }}
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <strong>Duration</strong>
-    </td>
-    <td valign="top">
-      {{ $duration }}
+      <a href="{{ $messageLink }}.mp3">Listen</a> ({{ $messageDuration }} seconds)
     </td>
   </tr>
 </table>

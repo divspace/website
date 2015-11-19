@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-light bg-faded">
-        <a class="navbar-brand" href="{{ url('/') }}" rel="home">
+        <a class="navbar-brand" href="{{ route('home.index') }}" rel="home">
           <img class="logo" src="{{ asset('assets/img/logo-sm.png') }}" width="68" height="20">
         </a>
         <ul class="nav navbar-nav">
@@ -21,6 +21,15 @@
           @endforeach
           <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:{{ env('PHONE_NUMBER') }}">
+              <span class="fa fa-fw fa-phone">
+                <span class="sr-only">Call</span>
+              </span>
+            </a>
           </li>
         </ul>
       </nav>

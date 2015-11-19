@@ -15,7 +15,7 @@ class ApiController extends Controller {
         \Mail::send('emails.voicemail', [
             'from' => $request->input('From'),
             'forwardedFrom' => $request->input('ForwardedFrom'),
-            'message' => $request->input('RecordingUrl'),
+            'message' => $request->input('RecordingUrl').'.mp3',
             'duration' => $request->input('RecordingDuration')
         ], function($message) {
             $message->to('kyle@divspace.com', 'Kyle Anderson');

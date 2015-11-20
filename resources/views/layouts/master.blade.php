@@ -47,7 +47,7 @@
     </div>
     <div class="container">
       <footer>
-        <p class="pull-left">Copyright &copy; {{ date('Y') }} <a href="#" data-toggle="modal" data-target="#contact">Kyle Anderson</a>.</p>
+        <p class="pull-left">&copy; {{ date('Y') }} <a href="#" data-toggle="modal" data-target="#contact">Kyle Anderson</a></p>
         <ul class="pull-right">
           @foreach($socialLinks as $socialLink)
             @if($socialLink['show'] === true)

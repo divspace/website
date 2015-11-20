@@ -8,7 +8,7 @@ class TwilioController extends Controller {
     public function sms(Request $request) {
         $xml  = '<Response>';
         $xml .= '  <Message to="'.env('PHONE_NUMBER').'">';
-        $xml .= htmlspecialchars(substr($request->input('From').':'.$request->input('Body'), 0, 160));
+        $xml .= htmlspecialchars($request->input('Body'));
         $xml .= '  </Message>';
         $xml .= '</Response>';
 

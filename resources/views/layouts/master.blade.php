@@ -25,7 +25,7 @@
         </ul>
         <ul class="nav navbar-nav pull-right">
           <li class="nav-item">
-            <a class="nav-link" href="tel:{{ env('PHONE_NUMBER') }}">
+            <a class="nav-link" href="tel:{{ obfuscate('+14803604373') }}">
               <span class="fa fa-fw fa-phone">
                 <span class="sr-only">Call</span>
               </span>

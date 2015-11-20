@@ -25,6 +25,13 @@
         </ul>
         <ul class="nav navbar-nav pull-right">
           <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">
+              <span class="fa fa-fw fa-envelope-o">
+                <span class="sr-only">Email</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="tel:{{ obfuscate('+14803604373') }}">
               <span class="fa fa-fw fa-phone">
                 <span class="sr-only">Call</span>

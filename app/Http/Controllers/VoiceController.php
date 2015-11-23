@@ -3,25 +3,15 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class TwilioController extends Controller {
+class VoiceController extends Controller {
 
-    public function sms(Request $request) {
-        $xml  = '<Response>';
-        $xml .= '  <Message to="'.env('PHONE_NUMBER').'">';
-        $xml .= htmlspecialchars($request->input('Body'));
-        $xml .= '  </Message>';
-        $xml .= '</Response>';
-
-        return response($xml, 200)->header('Content-Type', 'text/xml');
-    }
-
-    public function voice(Request $request) {
+    public function incoming(Request $request) {
         $xml  = '<Response>';
         $xml .= '  <Dial callerId="'.$request->input('From').'" timeout="15">';
         $xml .= '    <Number>'.env('PHONE_NUMBER').'</Number>';
         $xml .= '  </Dial>';
         $xml .= '  <Say voice="man">I am unable to take your call right now. Please leave your name, number, and a short message after the beep.</Say>';
-        $xml .= '  <Record action="'.env('APP_URL').'/twilio/record" method="POST" maxLength="300" />';
+        $xml .= '  <Record action="/voice/record" method="POST" maxLength="300" />';
         $xml .= '</Response>';
 
         return response($xml, 200)->header('Content-Type', 'text/xml');

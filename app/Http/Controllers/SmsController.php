@@ -7,12 +7,10 @@ class SmsController extends Controller {
 
     public function incoming(Request $request) {
         if($request->input('From') === env('PHONE_NUMBER')) {
-            $message = $request->input('From').' - '.htmlspecialchars($request->input('Body'));
-
             $xml  = '<Response>';
-            $xml .= '  <Message action="/sms/outgoing" method="POST">';
-            $xml .=      $message;
-            $xml .= '  </Message>';
+            $xml .= '  <Redirect method="POST">';
+            $xml .=      route('sms.outgoing');
+            $xml .= '  </Redirect>';
             $xml .= '</Response>';
         } else {
             $message = $request->input('From').' - '.htmlspecialchars($request->input('Body'));
@@ -28,19 +26,15 @@ class SmsController extends Controller {
     }
 
     public function outgoing(Request $request) {
-        if(preg_match('/\+[0-9]{10}/', $request->input('Body'), $phoneNumbers)) {
-            $phoneNumber = $phoneNumbers[1];
+        $message = $request->input('From').' - '.$request->input('Body').' - Sent from my iPhone';
 
-            $message = 'Sent from my iPhone';
+        $xml  = '<Response>';
+        $xml .= '  <Message to="'.$request->input('From').'" from="'.env('TWILIO_NUMBER').'">';
+        $xml .=      $message;
+        $xml .= '  </Message>';
+        $xml .= '</Response>';
 
-            $xml  = '<Response>';
-            $xml .= '  <Message to="'.$phoneNumber.'" from="'.env('TWILIO_NUMBER').'">';
-            $xml .=      '# = '.$phoneNumber.' / MSG = '.$message;
-            $xml .= '  </Message>';
-            $xml .= '</Response>';
-
-            return response($xml, 200)->header('Content-Type', 'text/xml');
-        }
+        return response($xml, 200)->header('Content-Type', 'text/xml');
     }
 
 }

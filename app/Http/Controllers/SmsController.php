@@ -7,8 +7,12 @@ class SmsController extends Controller {
 
     public function incoming(Request $request) {
         if($request->input('From') === env('PHONE_NUMBER')) {
+            $message = $request->input('From').' - '.htmlspecialchars($request->input('Body'));
+
             $xml  = '<Response>';
-            $xml .= '  <Message action="/sms/outgoing" method="POST" />';
+            $xml .= '  <Message action="/sms/outgoing" method="POST">';
+            $xml .=      $message;
+            $xml .= '  </Message>';
             $xml .= '</Response>';
         } else {
             $message = $request->input('From').' - '.htmlspecialchars($request->input('Body'));

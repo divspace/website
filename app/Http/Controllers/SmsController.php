@@ -35,7 +35,7 @@ class SmsController extends Controller {
 
             $xml  = '<Response>';
             $xml .= '  <Message to="'.$phoneNumber.'" from="'.env('TWILIO_NUMBER').'">';
-            $xml .=      $message;
+            $xml .=      '# = '.$phoneNumber.' / MSG = '.$message;
             $xml .= '  </Message>';
             $xml .= '</Response>';
 

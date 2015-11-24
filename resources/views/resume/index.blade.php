@@ -18,7 +18,7 @@
     <div class="resume-job">
       <div class="row">
         <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-          <strong>Application Developer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mediasolutionscorp.com">Media Solutions</a> &mdash; Chandler, AZ</span>
+          <strong>Programmer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mediasolutionscorp.com">Media Solutions</a> &mdash; Chandler, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
           <em>2015 &ndash; Present</em>
@@ -27,7 +27,6 @@
       <ul>
         <li>Easily jumped into existing Laravel 4 and Laravel 5 projects and provided new ways to increase productivity by introducing Gulp for task automation, Bower for managing JavaScript and CSS libraries, and Sass for improved readability and organization for CSS.</li>
         <li>Removed repetitive code and template variables with the DRY principle by creating repositories, transformers, presenters, and view composers.</li>
-        <li>Developed a program to automatically find missing product images and convert them web-friendly graphics for client websites.</li>
       </ul>
     </div>
     <div class="resume-job">

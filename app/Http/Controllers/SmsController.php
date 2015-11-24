@@ -12,7 +12,7 @@ class SmsController extends Controller {
             $xml .= '</Response>';
         } else {
             $message  = 'From: '.$request->input('From')."\n";
-            $message .= htmlspecialchars($request->input('Body'));
+            $message .= e($request->input('Body'));
 
             $xml  = '<Response>';
             $xml .= '  <Message to="'.env('PHONE_NUMBER').'">'.$message.'</Message>';
@@ -23,7 +23,7 @@ class SmsController extends Controller {
     }
 
     public function outgoing(Request $request) {
-        $message = htmlspecialchars($request->input('Body'));
+        $message = e($request->input('Body'));
 
         $xml  = '<Response>';
         $xml .= '  <Message to="'.$request->input('From').'" from="'.env('TWILIO_NUMBER').'">'.$message.'</Message>';

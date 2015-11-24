@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tel:{{ obfuscate('+14803604373') }}">
+            <a class="nav-link" href="tel:{{ obfuscate(env('TWILIO_NUMBER')) }}">
               <span class="fa fa-fw fa-phone">
                 <span class="sr-only">Call</span>
               </span>

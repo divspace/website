@@ -21,7 +21,7 @@
           <strong>Programmer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mediasolutionscorp.com">Media Solutions</a> &mdash; Chandler, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
-          <em>2015 &ndash; Present</em>
+          <em>July 2015 &ndash; November 2015</em>
         </div>
       </div>
       <ul>
@@ -35,7 +35,7 @@
           <strong>Chief Technology Officer</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.smartsourcellc.com">Smart Source Hosting</a> &mdash; New York, NY</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
-          <em>2014 &ndash; 2015</em>
+          <em>September 2014 &ndash; April 2015</em>
         </div>
       </div>
       <ul>
@@ -49,7 +49,7 @@
           <strong>Co-Founder &amp; CTO</strong><span class="hidden-xs-down"> &mdash; <a href="https://www.crucialhosting.com">Crucial Web Hosting</a> &mdash; Phoenix, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
-          <em>2006 &ndash; 2014</em>
+          <em>March 2006 &ndash; August 2014</em>
         </div>
       </div>
       <ul>
@@ -65,7 +65,7 @@
           <strong>IT Director</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.bndlithoaz.com">B&amp;D Litho</a> &mdash; Phoenix, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
-          <em>2001 &ndash; 2002</em>
+          <em>August 2001 &ndash; May 2002</em>
         </div>
       </div>
       <ul>

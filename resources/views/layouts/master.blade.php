@@ -25,6 +25,13 @@
         </ul>
         <ul class="nav navbar-nav pull-right">
           <li class="nav-item">
+            <a class="nav-link" href="{{ asset('kyle-anderson-resume.pdf') }}">
+              <span class="fa fa-fw fa-file-pdf-o">
+                <span class="sr-only">Resume</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">
               <span class="fa fa-fw fa-envelope-o">
                 <span class="sr-only">Email</span>

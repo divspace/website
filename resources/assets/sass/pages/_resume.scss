@@ -8,6 +8,13 @@
     margin-bottom: -.5rem;
   }
 
+  .resume-pdf {
+    position: relative;
+    top: -87px;
+    float: right;
+    margin-bottom: 0px;
+  }
+
   .resume-section {
     font-weight: bold;
     text-transform: uppercase;
@@ -78,8 +85,6 @@
   }
 
   .resume-skills {
-    margin-bottom: 2.5rem;
-
     .resume-skill-section {
       font-weight: bold;
     }

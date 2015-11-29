@@ -5,6 +5,9 @@
     <p class="resume-contact">
       Scottsdale, AZ <strong>&middot;</strong> <a href="tel:{{ obfuscate(env('TWILIO_NUMBER')) }}">{{ obfuscate(env('TWILIO_NUMBER')) }}</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">{{ obfuscate('kyle@divspace.com') }}</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://www.linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
     </p>
+    <p class="resume-pdf">
+      <a href="kyle-anderson-resume.pdf">Download PDF</a>
+    </p>
     <div class="resume-short-description hidden-lg-down">
       <p class="hidden-sm-down">Versatile and efficiency focused front- / back-end developer and programmer.</p>
       <p>Dedicated to building quality, high performance digital experiences, with a passion for translating complex requirements into elegant, functional code.</p>
@@ -96,8 +99,5 @@
         <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">MongoDB, MySQL, Redis</div>
       </div>
     </div>
-    <p class="text-center">
-      <a href="kyle-anderson-resume.pdf">Download PDF Version</a>
-    </p>
   </div>
 @stop

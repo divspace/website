@@ -96,5 +96,8 @@
         <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">MongoDB, MySQL, Redis</div>
       </div>
     </div>
+    <p class="text-center">
+      <a href="kyle-anderson-resume.pdf">Download PDF Version</a>
+    </p>
   </div>
 @stop

@@ -32,7 +32,7 @@
     <div class="resume-job">
       <div class="row">
         <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-          <strong>Chief Technology Officer</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.smartsourcellc.com">Smart Source Hosting</a> &mdash; New York, NY</span>
+          <strong>Chief Technology Officer</strong><span class="hidden-xs-down"> &mdash; <a href="http://www.smartsourcellc.com">SmartSource</a> &mdash; New York, NY</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
           <em>September 2014 &ndash; April 2015</em>
@@ -46,7 +46,7 @@
     <div class="resume-job">
       <div class="row">
         <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
-          <strong>Co-Founder &amp; CTO</strong><span class="hidden-xs-down"> &mdash; <a href="https://www.crucialhosting.com">Crucial Web Hosting</a> &mdash; Phoenix, AZ</span>
+          <strong>Co-Founder &amp; CTO</strong><span class="hidden-xs-down"> &mdash; <a href="https://www.crucialhosting.com">Crucial Web Hosting</a> &mdash; Queen Creek, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
           <em>March 2006 &ndash; August 2014</em>

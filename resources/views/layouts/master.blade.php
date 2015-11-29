@@ -31,7 +31,7 @@
               </span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item hidden-xs-down">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">
               <span class="fa fa-fw fa-envelope-o">
                 <span class="sr-only">Email</span>

@@ -3,7 +3,7 @@
   <div id="resume">
     <h1 class="resume-title">Kyle Anderson</h1>
     <p class="resume-contact">
-      Scottsdale, AZ <strong>&middot;</strong> <a href="tel:{{ obfuscate(preg_replace('/^\+1([0-9]{3})([0-9]{3})([0-9]{4})$/', '($1) $2-$3', env('TWILIO_NUMBER'))) }}">{{ obfuscate(env('TWILIO_NUMBER')) }}</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">{{ obfuscate('kyle@divspace.com') }}</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://www.linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
+      Scottsdale, AZ <strong>&middot;</strong> <a href="tel:{{ obfuscate(env('TWILIO_NUMBER')) }}">{{ obfuscate(preg_replace('/^\+1([0-9]{3})([0-9]{3})([0-9]{4})$/', '($1) $2-$3', env('TWILIO_NUMBER'))) }}</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">{{ obfuscate('kyle@divspace.com') }}</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://www.linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
     </p>
     <div class="resume-short-description hidden-lg-down">
       <p class="hidden-sm-down">Versatile and efficiency focused front- / back-end developer and programmer.</p>

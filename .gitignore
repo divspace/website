@@ -1,12 +1,6 @@
 .DS_Store
 .env
-*.pdf
-.phpintel
-/bootstrap/compiled.php
 /bower_components
 /node_modules
 /public/assets
-/storage
-/tests
 /vendor
-composer.lock

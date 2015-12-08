@@ -38,7 +38,8 @@ return [
         App\Providers\ComposerServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Msurguy\Honeypot\HoneypotServiceProvider::class
+        Msurguy\Honeypot\HoneypotServiceProvider::class,
+        Cyvelnet\Laravel5Fractal\Laravel5FractalServiceProvider::class
     ],
     'aliases' => [
         'App'       => Illuminate\Support\Facades\App::class,
@@ -75,6 +76,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'Honeypot'  => Msurguy\Honeypot\HoneypotFacade::class
+        'Honeypot'  => Msurguy\Honeypot\HoneypotFacade::class,
+        'Fractal'   => Cyvelnet\Laravel5Fractal\Facades\Fractal::class
     ]
 ];

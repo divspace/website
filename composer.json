@@ -6,7 +6,8 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "msurguy/honeypot": "^1.0"
+        "msurguy/honeypot": "^1.0",
+        "cyvelnet/laravel5-fractal": "^1.2"
     },
     "autoload": {
         "classmap": [

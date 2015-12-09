@@ -8,11 +8,10 @@ class CreateShiftsTable extends Migration {
     public function up() {
         Schema::create('shifts', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('manager_id')->unsigned();
-            $table->integer('employee_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->float('break');
-            $table->date('start_time');
-            $table->date('end_time');
+            $table->timestamp('start_time');
+            $table->timestamp('end_time');
             $table->timestamps();
         });
     }

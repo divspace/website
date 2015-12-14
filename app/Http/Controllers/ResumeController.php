@@ -2,10 +2,10 @@
 
 use App\Http\Controllers\Controller;
 
-class ResumeController extends Controller {
-
-    public function index() {
+class ResumeController extends Controller
+{
+    public function index()
+    {
         return view('resume.index');
     }
-
 }

@@ -5,14 +5,15 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder {
-
-    public function run() {
+class DatabaseSeeder extends Seeder
+{
+    public function run()
+    {
         $faker = Faker::create();
 
         Model::unguard();
 
-        foreach(range(1, 20) as $index) {
+        foreach (range(1, 20) as $index) {
             DB::table('users')->insert([
                 'name' => $faker->name,
                 'role' => 'employee',
@@ -34,5 +35,4 @@ class DatabaseSeeder extends Seeder {
 
         Model::reguard();
     }
-
 }

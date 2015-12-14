@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model {
-
+class User extends Model
+{
     protected $table = 'users';
 
     protected $fillable = [
@@ -23,8 +23,13 @@ class User extends Model {
         'updated_at' => 'datetime'
     ];
 
-    public function setPhoneAttribute($value) {
+    public function setPhoneAttribute($value)
+    {
         $this->attributes['phone'] = preg_replace('/[^0-9]+/', '', $value);
     }
 
+    public function getPhoneAttribue($value)
+    {
+        return preg_replace('/^([0-9]{3})([0-9]{3})([0-9]{4})$/', '($1) $2-$3', $value);
+    }
 }

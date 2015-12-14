@@ -3,10 +3,11 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShiftsTable extends Migration {
-
-    public function up() {
-        Schema::create('shifts', function(Blueprint $table) {
+class CreateShiftsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('shifts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->float('break');
@@ -16,8 +17,8 @@ class CreateShiftsTable extends Migration {
         });
     }
 
-    public function down() {
+    public function down()
+    {
         Schema::drop('shifts');
     }
-
 }

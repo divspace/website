@@ -2,9 +2,10 @@
 
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller {
-
-    public function index() {
+class HomeController extends Controller
+{
+    public function index()
+    {
         $terminal = [
             'title'  => 'divspace.com',
             'date'   => date('D M d').' 16:20:'.date('s'),
@@ -13,5 +14,4 @@ class HomeController extends Controller {
 
         return view('home.index', compact('terminal'));
     }
-
 }

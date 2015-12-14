@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Shift extends Model {
-
+class Shift extends Model
+{
     protected $table = 'shifts';
 
     protected $fillable = [
@@ -22,5 +22,4 @@ class Shift extends Model {
         'created_at' => 'datetime',
         'updated_at' => 'datetime'
     ];
-
 }

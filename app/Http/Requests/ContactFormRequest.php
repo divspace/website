@@ -2,13 +2,15 @@
 
 use App\Http\Requests\Request;
 
-class ContactFormRequest extends Request {
-
-    public function authorize() {
+class ContactFormRequest extends Request
+{
+    public function authorize()
+    {
         return true;
     }
 
-    public function rules() {
+    public function rules()
+    {
         return [
             'name' => 'required',
             'email' => 'required|email|max:512',
@@ -18,7 +20,8 @@ class ContactFormRequest extends Request {
         ];
     }
 
-    public function messages() {
+    public function messages()
+    {
         return [
             'name.required' => 'Your name is required',
             'email.required' => 'Your email address is required',
@@ -27,5 +30,4 @@ class ContactFormRequest extends Request {
             'message.required' => 'Your message is required'
         ];
     }
-
 }

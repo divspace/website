@@ -3,10 +3,11 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class SmsController extends Controller {
-
-    public function incoming(Request $request) {
-        if($request->input('From') === env('PHONE_NUMBER')) {
+class SmsController extends Controller
+{
+    public function incoming(Request $request)
+    {
+        if ($request->input('From') === env('PHONE_NUMBER')) {
             $xml  = '<Response>';
             $xml .= '  <Redirect method="POST">'.route('sms.outgoing').'</Redirect>';
             $xml .= '</Response>';
@@ -22,7 +23,8 @@ class SmsController extends Controller {
         return response($xml, 200)->header('Content-Type', 'text/xml');
     }
 
-    public function outgoing(Request $request) {
+    public function outgoing(Request $request)
+    {
         $message = e($request->input('Body'));
 
         $xml  = '<Response>';
@@ -31,5 +33,4 @@ class SmsController extends Controller {
 
         return response($xml, 200)->header('Content-Type', 'text/xml');
     }
-
 }

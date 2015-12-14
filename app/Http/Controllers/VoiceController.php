@@ -3,9 +3,10 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class VoiceController extends Controller {
-
-    public function incoming(Request $request) {
+class VoiceController extends Controller
+{
+    public function incoming(Request $request)
+    {
         $xml  = '<Response>';
         $xml .= '  <Dial callerId="'.$request->input('From').'" timeout="15">';
         $xml .= '    <Number>'.env('PHONE_NUMBER').'</Number>';
@@ -17,12 +18,13 @@ class VoiceController extends Controller {
         return response($xml, 200)->header('Content-Type', 'text/xml');
     }
 
-    public function record(Request $request) {
+    public function record(Request $request)
+    {
         \Mail::send('emails.voicemail', [
             'phoneNumber' => $request->input('From'),
             'messageLink' => $request->input('RecordingUrl'),
             'messageDuration' => $request->input('RecordingDuration')
-        ], function($message) {
+        ], function ($message) {
             $message->to('kyle@divspace.com', 'Kyle Anderson');
             $message->from('postmaster@divspace.com', 'Divspace');
             $message->subject('New Voicemail From '.$phoneNumber.' ('.$request->input('RecordingDuration').' Seconds)');
@@ -32,5 +34,4 @@ class VoiceController extends Controller {
 
         return response($xml, 200)->header('Content-Type', 'text/xml');
     }
-
 }

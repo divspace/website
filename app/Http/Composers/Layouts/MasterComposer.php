@@ -3,15 +3,17 @@
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 
-class MasterComposer {
-
+class MasterComposer
+{
     protected $request;
 
-    public function __construct(Request $request) {
+    public function __construct(Request $request)
+    {
         $this->request = $request;
     }
 
-    public function compose(View $view) {
+    public function compose(View $view)
+    {
         $path = $this->request->path();
 
         $view->pageTitle = 'Divspace';
@@ -70,5 +72,4 @@ class MasterComposer {
             ]
         ];
     }
-
 }

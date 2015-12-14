@@ -2,16 +2,17 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class ComposerServiceProvider extends ServiceProvider {
-
-    public function boot() {
+class ComposerServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
         view()->composer(
             'layouts.master', 'App\Http\Composers\Layouts\MasterComposer'
         );
     }
 
-    public function register() {
+    public function register()
+    {
         //
     }
-
 }

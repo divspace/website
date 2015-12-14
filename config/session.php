@@ -4,7 +4,7 @@ return [
     'driver' => env('SESSION_DRIVER', 'file'),
     'lifetime' => 120,
     'expire_on_close' => false,
-    'encrypt' => false,
+    'encrypt' => true,
     'files' => storage_path('framework/sessions'),
     'connection' => null,
     'table' => 'sessions',
@@ -12,5 +12,5 @@ return [
     'cookie' => 'divspace_session',
     'path' => '/',
     'domain' => null,
-    'secure' => false
+    'secure' => true
 ];

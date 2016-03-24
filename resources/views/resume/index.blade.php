@@ -18,6 +18,16 @@
     <div class="resume-job">
       <div class="row">
         <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
+          <strong>Web Developer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mosesinc.com">Moses, Inc.</a> &mdash; Phoenix, AZ</span>
+        </div>
+        <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">
+          <em>January 2016 &ndash; Present</em>
+        </div>
+      </div>
+    </div>
+    <div class="resume-job">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-xl-8 resume-job-position">
           <strong>Programmer</strong><span class="hidden-xs-down"> &mdash; <a href="http://mediasolutionscorp.com">Media Solutions</a> &mdash; Chandler, AZ</span>
         </div>
         <div class="hidden-sm-down col-md-4 col-lg-4 col-xl-4 resume-job-duration">

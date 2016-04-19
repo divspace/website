@@ -3,7 +3,7 @@
   <div id="resume">
     <h1 class="resume-title">Kyle Anderson</h1>
     <p class="resume-contact">
-      Scottsdale, AZ <strong>&middot;</strong> <a href="tel:{{ obfuscate(env('TWILIO_NUMBER')) }}">{{ obfuscate(preg_replace('/^\+1([0-9]{3})([0-9]{3})([0-9]{4})$/', '($1) $2-$3', env('TWILIO_NUMBER'))) }}</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">{{ obfuscate('kyle@divspace.com') }}</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://www.linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
+      Tempe, AZ <strong>&middot;</strong> <a href="tel:{{ obfuscate(env('TWILIO_NUMBER')) }}">{{ obfuscate(preg_replace('/^\+1([0-9]{3})([0-9]{3})([0-9]{4})$/', '($1) $2-$3', env('TWILIO_NUMBER'))) }}</a> <strong>&middot;</strong> <a href="#" data-toggle="modal" data-target="#contact">{{ obfuscate('kyle@divspace.com') }}</a><span class="hidden-sm-down"> <strong>&middot;</strong> <a href="https://www.linkedin.com/in/divspace">linkedin.com/in/divspace</a></span>
     </p>
     <div class="resume-short-description hidden-lg-down">
       <p class="hidden-sm-down">Versatile and efficiency focused front- / back-end developer and programmer.</p>
@@ -24,6 +24,10 @@
           <em>January 2016 &ndash; Present</em>
         </div>
       </div>
+      <ul>
+        <li>Developed custom WordPress boilerplate framework and theme to speed up development.</li>
+        <li>Created the development and deployment process using modern frameworks, task automation, and Continuous Integration (CI).</li>
+      </ul>
     </div>
     <div class="resume-job">
       <div class="row">
@@ -91,7 +95,7 @@
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">PHP Frameworks</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Slim, Symfony, Yii</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Lumen, Symfony</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>

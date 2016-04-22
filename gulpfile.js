@@ -20,6 +20,7 @@ var packages = {
   bootstrap: './bower_components/bootstrap/dist/js',
   formValidation: './resources/vendor/form-validation',
   jquery: './bower_components/jquery/dist',
+  tether: './bower_components/tether/dist',
   typedJs: './bower_components/typed-js/js'
 };
 
@@ -42,12 +43,15 @@ elixir(function(mix) {
     // CSS
     .styles([
       packages.formValidation + '/css/form-validation.css',
+      packages.tether + '/css/tether.css',
+      packages.tether + '/css/tether-theme-basic.css',
       assets.css + '/app.css'
     ], assets.css + '/app.css')
 
     // JavaScript
     .scripts([
       packages.jquery + '/jquery.js',
+      packages.tether + '/js/tether.js',
       packages.bootstrap + '/bootstrap.js',
       packages.formValidation + '/js/form-validation.min.js',
       packages.formValidation + '/js/framework/bootstrap.min.js',

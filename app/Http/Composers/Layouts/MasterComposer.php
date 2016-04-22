@@ -35,13 +35,13 @@ class MasterComposer
 
         $view->socialLinks = [
             [
-                'show'  => false,
+                'show'  => true,
                 'title' => 'Facebook',
                 'icon'  => 'facebook',
                 'url'   => 'https://www.facebook.com/divspace'
             ],
             [
-                'show'  => false,
+                'show'  => true,
                 'title' => 'Twitter',
                 'icon'  => 'twitter',
                 'url'   => 'https://twitter.com/divspace',
@@ -53,7 +53,7 @@ class MasterComposer
                 'url'   => 'https://www.linkedin.com/in/divspace'
             ],
             [
-                'show'  => false,
+                'show'  => true,
                 'title' => 'Bitbucket',
                 'icon'  => 'bitbucket',
                 'url'   => 'https://bitbucket.org/divspace'
@@ -65,7 +65,7 @@ class MasterComposer
                 'url'   => 'https://github.com/divspace'
             ],
             [
-                'show'  => false,
+                'show'  => true,
                 'title' => 'Stack Overflow',
                 'icon'  => 'stack-overflow',
                 'url'   => 'https://stackoverflow.com/users/5361065'

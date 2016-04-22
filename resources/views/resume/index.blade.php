@@ -90,16 +90,28 @@
     <h3 class="resume-section">Select Technical Skills</h3>
     <div class="resume-skills">
       <div class="row">
+        <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Markup Languages</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">HTML, CSS, SCSS</div>
+      </div>
+      <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Programming Languages</div>
         <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">Bash, JavaScript, Perl, PHP, SQL</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">PHP Frameworks</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Lumen, Symfony</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">CodeIgniter, Laravel, Lumen, Spark, Symfony</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Web Applications</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">ExpressionEngine, Magento, October, WordPress</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>
         <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">AngularJS, Node.js, Socket.IO, Vue.js</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">APIs</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">Marketo, Stripe, Twilio, WordPress</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Solution Stacks</div>

@@ -103,7 +103,7 @@
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">Web Applications</div>
-        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">ExpressionEngine, Magento, October, WordPress</div>
+        <div class="col-xs-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 resume-skill-items">ExpressionEngine, Magento, WordPress</div>
       </div>
       <div class="row">
         <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 resume-skill-section">JavaScript Frameworks</div>
